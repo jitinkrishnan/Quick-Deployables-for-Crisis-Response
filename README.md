@@ -13,7 +13,6 @@ A model that predicts binary labels 0 or 1 (1 = high priority/urgent; 0 = rest) 
 
 Sample Output: ```[0,1]```
 #### If you need to call from another code
-Comment out lines 110, 111 in ```predictor.py```
 ```
 from predictor import predict
 x = predict('sample.txt')
