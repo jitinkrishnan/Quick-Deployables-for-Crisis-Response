@@ -107,5 +107,7 @@ def predict(test_file):
         print(total_preds)
     return total_preds
 
-test_file = sys.argv[1]
-total_preds = predict(test_file)
+if __name__ == '__main__':
+    # execute only if run as the entry point into the program
+    test_file = sys.argv[1]
+    total_preds = predict(test_file)
