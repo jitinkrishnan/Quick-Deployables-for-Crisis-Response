@@ -1,16 +1,25 @@
 # Quick-Deployables
-Presenting quick deployable tweet-trained models to use for crisis response.
+Presenting quick deployable models (trained using crisis tweets) to filter messages during a crisis response.
 
 ## Priority Classifier (Bert-based)
 A model that predicts binary labels 0 or 1 (1 = high priority/urgent; 0 = rest) for a given set of input sentences. 
 
 ### Requirements
 - Python3.6+ and ```pip install -r requirements.txt``` to install necessary packages.
-- Download model from Google Drive [urgency.pt]() to the current folder.
+- Download model from our Google Drive [urgency.pt]() to the current folder.
 
-#### How to run
+### How to run
 ```python predictor.py 'sample.txt'```
-where ```sample.txt``` contains sentences (or tweets).
+
+Sample Output: ```[0,1]```
+#### If you need to call from another code
+Comment out lines 110, 111 in ```predictor.py```
+```
+from predictor import predict
+x = predict('sample.txt')
+```
+
+Output ```x``` will contain the predictions for sentences in ```sample.txt```
 
 #### Results on Crisis Data
 We train using tweets from a set of crisis events and test using an unseen crisis.
