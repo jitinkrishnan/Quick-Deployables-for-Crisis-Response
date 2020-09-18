@@ -11,7 +11,7 @@ A model that predicts binary labels 0 or 1 (1 = high priority/urgent; 0 = rest) 
 ### How to run
 ```python predictor.py 'sample.txt'```
 
-Sample Output: ```[0,1]```
+Sample Output: ```[0,1]``` (for the 2 corresponding sentences in ```sample.txt```).
 #### If you need to call from another code
 ```
 from predictor import predict
