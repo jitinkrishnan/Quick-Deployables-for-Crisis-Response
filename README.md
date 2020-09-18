@@ -13,7 +13,7 @@ A model that predicts binary labels 0 or 1 (1 = high priority/urgent; 0 = rest) 
 
 Sample Output: ```[0,1]```
 
-corresponding to the following sentences in ```sample.txt```:
+corresponding to the following two sentences in ```sample.txt```:
 ```
 Hello there.
 Please help, I'm near the train station.
