@@ -1,8 +1,8 @@
 # Quick-Deployables
 Presenting quick deployable tweet-trained models to use for crisis response.
 
-## Priority Binary Classifier (Bert-based)
-A model that predicts 0 or 1 (1 = high priority/urgent; 0 = rest) for a given set of input sentences. 
+## Priority Classifier (Bert-based)
+A model that predicts binary labels 0 or 1 (1 = high priority/urgent; 0 = rest) for a given set of input sentences. 
 
 ### Requirements
 - Python3.6+ and ```pip install -r requirements.txt``` to install necessary packages.
