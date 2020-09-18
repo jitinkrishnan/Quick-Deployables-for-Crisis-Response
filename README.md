@@ -26,8 +26,6 @@ from predictor import predict
 x = predict('sample.txt')
 ```
 
-Output ```x``` will contain the predictions for sentences in ```sample.txt```
-
 #### Results on Crisis Data
 We train using tweets from a set of crisis events and test using an unseen crisis.
 
