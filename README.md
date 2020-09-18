@@ -19,7 +19,8 @@ Hello there.
 Please help, I'm near the train station.
 ```
 
-#### If you need to call from another code
+#### Calling from another code
+If you need to call from another code to return predictions as a numpy array
 ```
 from predictor import predict
 x = predict('sample.txt')
