@@ -10,7 +10,7 @@ A model that predicts binary labels 0 or 1 (1 = high priority/urgent; 0 = rest) 
 
 #### How to run
 ```python predictor.py 'sample.txt'```
-where ```sample.txt``` contains sentences.
+where ```sample.txt``` contains sentences (or tweets).
 
 #### Results on Crisis Data
 We train using tweets from a set of crisis events and test using an unseen crisis.
