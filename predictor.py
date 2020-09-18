@@ -7,7 +7,7 @@ from transformers import BertModel, BertTokenizer
 
 hidden_layers = 768
 epochs = 50
-SCRATCH_FNAME = "/scratch/jkrishn2/FALL2020/BERT/SENTIMENT/urgency.pt"
+FNAME = "urgency.pt"
 
 class BERT(nn.Module):
 
@@ -95,7 +95,7 @@ def predict(test_file):
 
     ############### predict ##########################
     #load weights of best model
-    path = SCRATCH_FNAME
+    path = FNAME
     model = model.cpu()
     model.load_state_dict(torch.load(path, map_location=torch.device('cpu')))
 
