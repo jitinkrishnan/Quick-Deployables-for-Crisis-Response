@@ -1,7 +1,7 @@
 # Quick-Deployables
 Presenting quick deployable tweet-trained models to use for crisis response.
 
-### Urgency/Priority Binary Classifier (Bert-based)
+## Urgency/Priority Binary Classifier (Bert-based)
 
 ### Requirements
 - Python3.6+ and ```pip install -r requirements.txt``` to install necessary packages.
