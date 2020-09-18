@@ -6,7 +6,7 @@ A model that predicts binary labels 0 or 1 (1 = high priority/urgent; 0 = rest) 
 
 ### Requirements
 - Python3.6+ and ```pip install -r requirements.txt``` to install necessary packages.
-- Download model from our Google Drive [urgency.pt]() to the current folder.
+- Download the pytorch model from our Google Drive [urgency.pt]() to the current folder.
 
 ### How to run
 ```python predictor.py 'sample.txt'```
