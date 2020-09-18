@@ -5,7 +5,7 @@ Presenting quick deployable tweet-trained models to use for crisis response.
 
 ### Requirements
 - Python3.6+ and ```pip install -r requirements.txt``` to install necessary packages.
-- Download model from Google Drive [urgency.pt]()
+- Download model from Google Drive [urgency.pt]() to the current folder.
 
 #### How to run
 ```python predictor.py 'sample.txt'```
