@@ -32,7 +32,7 @@ x = predict('sample.txt')
 ```
 
 #### Results on Crisis Data
-We train using tweets from a set of crisis events and test using an unseen crisis. Our dataset is collected from various sources such as [TREC](http://dcs.gla.ac.uk/∼richardm/TREC IS/) and [CitizenHelper](https://ist.gmu.edu/~hpurohit/informatics-lab/icwsm17-citizenhelper.html).
+We train using tweets from a set of crisis events and test using an unseen crisis. Our dataset is collected from various sources such as [TREC](http://dcs.gla.ac.uk/∼richardm/TREC_IS/) and [CitizenHelper](https://ist.gmu.edu/~hpurohit/informatics-lab/icwsm17-citizenhelper.html).
 
 | Target Crisis  | Accuracy in %  |
  :-: |  :-:
