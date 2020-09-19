@@ -59,7 +59,7 @@ We train using tweets from a set of crisis events and test using an unseen crisi
 | **Average**		          | **86.54** | **86.54** |
 
 ### Multilingual Model 
-Use [urgency_ml.pt]() instead and change line ```7``` and ```8``` in ```predictor.py``` to:
+Use [urgency_ml.pt]() instead and change line ```8``` and ```9``` in ```predictor.py``` to:
 ```
 hidden_layers = 105879
 FNAME = "urgency_ml.pt"
