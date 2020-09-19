@@ -6,8 +6,7 @@ from torch.utils.data import TensorDataset, DataLoader, RandomSampler, Sequentia
 from transformers import BertModel, BertTokenizer
 
 hidden_layers = 768
-epochs = 50
-FNAME = "urgency.pt"
+FNAME = "urgency_en.pt"
 
 class BERT(nn.Module):
 
