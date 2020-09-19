@@ -34,29 +34,29 @@ x = predict('sample.txt')
 #### Results on Crisis Data
 We train using tweets from a set of crisis events and test using an unseen crisis. Our dataset is collected from various sources such as [CitizenHelper](https://ist.gmu.edu/~hpurohit/informatics-lab/icwsm17-citizenhelper.html) and [TREC](http://dcs.gla.ac.uk/~richardm/TREC_IS/).
 
-| Target Crisis  | Accuracy in %  |
- :-: |  :-:
-| Maria                   | 87.46 |
-| Harvey                  | 86.08 |
-| Florence                | 87.68 |
-| Irma                    | 84.23 |
-| Australia Bushfire      | 83.34 |
-| Philipinnes Floods      | 89.22 |
-| Alberta Floods          | 84.33 |
-| Nepal Earthquake        | 91.05 |
-| Typhoon Hagupit         | 82.81 |
-| Chile Earthquake        | 88.74 |
-| Joplin Tornado          | 86.21 |
-| Typhoon Yolanda         | 87.37 |
-| Queensland Floods       | 84.33 |
-| Manila Floods           | 91.05 |
-| Paris Attacks           | 82.81 |
-| Italy Earthquakes       | 88.74 |
-| Guatemala Earthquake    | 86.21 |
-| Boston Bombings         | 87.37 |
-| Florida School Shooting | 86.21 |
-| Covid                   | 87.37 |
-| **Average**		          | **86.54** |
+| Target Crisis  | Accuracy in %  | Recall in % |
+ :-: |  :-: |  :-:
+| Maria                   | 87.46 | 87.46 |
+| Harvey                  | 86.08 | 87.46 |
+| Florence                | 87.68 | 87.46 |
+| Irma                    | 84.23 | 87.46 |
+| Australia Bushfire      | 83.34 | 87.46 |
+| Philipinnes Floods      | 89.22 | 87.46 |
+| Alberta Floods          | 84.33 | 87.46 |
+| Nepal Earthquake        | 91.05 | 87.46 |
+| Typhoon Hagupit         | 82.81 | 87.46 |
+| Chile Earthquake        | 88.74 | 87.46 |
+| Joplin Tornado          | 86.21 | 87.46 |
+| Typhoon Yolanda         | 87.37 | 87.46 |
+| Queensland Floods       | 84.33 | 87.46 |
+| Manila Floods           | 91.05 | 87.46 |
+| Paris Attacks           | 82.81 | 87.46 |
+| Italy Earthquakes       | 88.74 | 87.46 |
+| Guatemala Earthquake    | 86.21 | 87.46 |
+| Boston Bombings         | 87.37 | 87.46 |
+| Florida School Shooting | 86.21 | 87.46 |
+| Covid                   | 87.37 | 87.46 |
+| **Average**		          | **86.54** | **86.54** |
 
 ### Multilingual Model (coming soon..)
 
