@@ -2,7 +2,7 @@
 Presenting quick deployable models (trained using crisis tweets) to filter critical messages during a crisis response.
 
 ## Priority Classifier (Bert-based)
-A model that predicts binary labels 0 or 1 (1 = high priority/urgent; 0 = rest) for a given set of input sentences.
+A model that predicts binary labels ```0``` or ```1``` (```1``` = high priority/urgent; ```0``` = rest) for a given set of input sentences.
 
 ```Input:``` A text file
 
