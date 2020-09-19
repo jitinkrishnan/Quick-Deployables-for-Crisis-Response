@@ -10,7 +10,7 @@ A model that predicts binary labels 0 or 1 (1 = high priority/urgent; 0 = rest) 
 
 ### Requirements
 - Python3.6+ and ```pip install -r requirements.txt``` to install necessary packages.
-- Download the pytorch model from our Google Drive [urgency.pt]() to the current folder.
+- Download the pytorch model from our Google Drive [urgency_en.pt]() to the current folder.
 - Input sentences or tweets should be in text format as shown in ```sample.txt```
 
 ### How to run
@@ -58,7 +58,12 @@ We train using tweets from a set of crisis events and test using an unseen crisi
 | Covid                   | 87.37 | 87.46 |
 | **Average**		          | **86.54** | **86.54** |
 
-### Multilingual Model (coming soon..)
+### Multilingual Model 
+Use [urgency_ml.pt]() instead and change line ```7``` and ```8``` in ```predictor.py``` to:
+```
+hidden_layers = 105879
+FNAME = "urgency_ml.pt"
+```
 
 ### Contact information
 For help or issues, please submit a GitHub issue or contact Jitin Krishnan (`jkrishn2@gmu.edu`).
