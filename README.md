@@ -14,7 +14,7 @@ A model that predicts binary labels ```0``` or ```1``` (```1``` = high priority/
 - Input sentences or tweets should be in text format as shown in ```sample.txt```
 
 ### How to run
-```python predictor.py 'sample.txt'```
+```python predictor.py 'sample.txt' 768 'en' 'urgency_en.pt'```
 
 Sample Output: ```[0,1]```
 
@@ -28,7 +28,7 @@ Please help, I'm near the train station.
 If you need to call from another code to return predictions as a numpy array
 ```
 from predictor import predict
-x = predict('sample.txt')
+x = predict('sample.txt' 768 'en' 'urgency_en.pt')
 ```
 
 #### Results on Crisis Data
@@ -59,11 +59,8 @@ We train using tweets from a set of crisis events and test using an unseen crisi
 | **Average**		          | **0.77** | **0.73** |
 
 ### Multilingual Model 
-Use [urgency_ml.pt]() instead and change line ```8``` and ```9``` in ```predictor.py``` to:
-```
-hidden_layers = 105879
-FNAME = "urgency_ml.pt"
-```
+Use [urgency_ml.pt]() instead.
+```python predictor.py 'sample.txt' 105879 'ml' 'urgency_ml.pt'```
 
 ### Contact information
 For help or issues, please submit a GitHub issue or contact Jitin Krishnan (`jkrishn2@gmu.edu`).
