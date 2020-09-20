@@ -34,29 +34,29 @@ x = predict('sample.txt')
 #### Results on Crisis Data
 We train using tweets from a set of crisis events and test using an unseen crisis. For example, when the target crisis is ```Maria```, we train using tweets from rest of all crises and test on tweets from ```Maria```. Our dataset is collected from various sources such as [CitizenHelper](https://ist.gmu.edu/~hpurohit/informatics-lab/icwsm17-citizenhelper.html) and [TREC](http://dcs.gla.ac.uk/~richardm/TREC_IS/).
 
-| Target Crisis  | Accuracy in %  | Recall in % |
+| Target Crisis  | Accuracy  | Recall |
  :-: |  :-: |  :-:
-| Maria                   | 87.46 | 87.46 |
-| Harvey                  | 86.08 | 87.46 |
-| Florence                | 87.68 | 87.46 |
-| Irma                    | 84.23 | 87.46 |
-| Australia Bushfire      | 83.34 | 87.46 |
-| Philipinnes Floods      | 89.22 | 87.46 |
-| Alberta Floods          | 84.33 | 87.46 |
-| Nepal Earthquake        | 91.05 | 87.46 |
-| Typhoon Hagupit         | 82.81 | 87.46 |
-| Chile Earthquake        | 88.74 | 87.46 |
-| Joplin Tornado          | 86.21 | 87.46 |
-| Typhoon Yolanda         | 87.37 | 87.46 |
-| Queensland Floods       | 84.33 | 87.46 |
-| Manila Floods           | 91.05 | 87.46 |
-| Paris Attacks           | 82.81 | 87.46 |
-| Italy Earthquakes       | 88.74 | 87.46 |
-| Guatemala Earthquake    | 86.21 | 87.46 |
-| Boston Bombings         | 87.37 | 87.46 |
-| Florida School Shooting | 86.21 | 87.46 |
-| Covid                   | 87.37 | 87.46 |
-| **Average**		          | **86.54** | **86.54** |
+| Maria                   | 0.87 | 0.83 |
+| Harvey                  | 0.75 | 0.72 |
+| Florence                | 0.92 | 0.89 |
+| Irma                    | 0.67 | 0.59 |
+| Australia Bushfire      | 0.81 | 0.74 |
+| Philipinnes Floods      | 0.71 | 0.68 |
+| Alberta Floods          | 0.77 | 0.68 |
+| Nepal Earthquake        | 0.78 | 0.80 |
+| Typhoon Hagupit         | 0.82 | 0.82 |
+| Chile Earthquake        | 0.74 | 0.64 |
+| Joplin Tornado          | 0.74 | 0.71 |
+| Typhoon Yolanda         | 0.87 | 0.86 |
+| Queensland Floods       | 0.76 | 0.73 |
+| Manila Floods           | 0.65 | 0.57 |
+| Paris Attacks           | 0.87 | 0.84 |
+| Italy Earthquakes       | 0.73 | 0.70 |
+| Guatemala Earthquake    | 0.67 | 0.64 |
+| Boston Bombings         | 0.82 | 0.82 |
+| Florida School Shooting | 0.75 | 0.66 |
+| Covid                   | 0.77 | 0.73 |
+| **Average**		          | **0.77** | **0.73** |
 
 ### Multilingual Model 
 Use [urgency_ml.pt]() instead and change line ```8``` and ```9``` in ```predictor.py``` to:
