@@ -23,7 +23,7 @@ Sample Output: ```[0,1]```
 corresponding to the following two sentences in ```sample.txt```:
 ```
 Hello there.
-Please help, I'm near the train station.
+We need rescue at the train station.
 ```
 
 #### Calling from another code
