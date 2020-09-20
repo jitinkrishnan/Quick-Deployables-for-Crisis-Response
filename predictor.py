@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 import sys
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
-from transformers import BertModel, BertTokenizer, AutoTokenizer, DistilBertModel, AutoModelForMaskedLM, DistilBertTokenizer
+from transformers import AutoTokenizer, DistilBertModel, AutoModelForMaskedLM, DistilBertTokenizer
 import transformers
 
 class BERT(nn.Module):
