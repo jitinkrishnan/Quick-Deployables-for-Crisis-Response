@@ -60,7 +60,7 @@ We train using tweets from a set of crisis events and test using an unseen crisi
 | Covid                   | 0.77 | 0.73 |
 | **Average**		          | **0.77** | **0.73** |
 
-### Multilingual Model 
+#### Multilingual
 Use [urgency_ml.pt]() instead.
 ```python predictor.py 'sample.txt' 105879 'ml' 'urgency_ml.pt'```
 
