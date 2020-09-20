@@ -3,10 +3,8 @@ import torch
 import torch.nn as nn
 import sys
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
-from transformers import BertModel, BertTokenizer
-
-hidden_layers = 768
-FNAME = "urgency_en.pt"
+from transformers import BertModel, BertTokenizer, AutoTokenizer, DistilBertModel, AutoModelForMaskedLM, DistilBertTokenizer
+import transformers
 
 class BERT(nn.Module):
 
@@ -64,13 +62,17 @@ def test(model, test_dataloader):
 
     return total_preds
 
-def predict(test_file):
+def predict(test_file, hidden_layers, lang, SCRATCH_FNAME):
     f = open(test_file)
     test_sentences = f.readlines()
     f.close()
 
-    tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
-    bert = BertModel.from_pretrained("bert-base-uncased")
+    if lang == 'en':
+        tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
+        bert = BertModel.from_pretrained("bert-base-uncased")
+    else:
+        tokenizer = AutoTokenizer.from_pretrained("bert-base-multilingual-uncased")
+        bert = AutoModelForMaskedLM.from_pretrained("bert-base-multilingual-uncased")
 
     test_sentences_tokenized = np.array([tokenizer.encode(x, add_special_tokens=True, max_length=40, truncation=True) for x in test_sentences])
 
@@ -94,7 +96,7 @@ def predict(test_file):
 
     ############### predict ##########################
     #load weights of best model
-    path = FNAME
+    path = SCRATCH_FNAME
     model = model.cpu()
     model.load_state_dict(torch.load(path, map_location=torch.device('cpu')))
 
@@ -109,4 +111,9 @@ def predict(test_file):
 if __name__ == '__main__':
     # execute only if run as the entry point into the program
     test_file = sys.argv[1]
-    total_preds = predict(test_file)
+    hidden_layers = int(sys.argv[2]) #768
+    lang = sys.argv[3] #'en'
+    SCRATCH_FNAME = sys.argv[4] #"/scratch/jkrishn2/FALL2020/BERT/SENTIMENT/urgency.pt"
+
+    total_preds = predict(test_file, hidden_layers, lang, SCRATCH_FNAME)
+
