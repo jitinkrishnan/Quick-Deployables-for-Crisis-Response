@@ -113,7 +113,7 @@ if __name__ == '__main__':
     test_file = sys.argv[1]
     hidden_layers = int(sys.argv[2]) #768
     lang = sys.argv[3] #'en'
-    SCRATCH_FNAME = sys.argv[4] #"/scratch/jkrishn2/FALL2020/BERT/SENTIMENT/urgency.pt"
+    SCRATCH_FNAME = sys.argv[4] #"urgency.pt"
 
     total_preds = predict(test_file, hidden_layers, lang, SCRATCH_FNAME)
 
