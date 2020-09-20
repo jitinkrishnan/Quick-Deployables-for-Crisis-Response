@@ -12,7 +12,7 @@ To be specific, we use ```DistilBert``` for English and ```bert-base-multilingua
 
 ### Requirements
 - Python3.6+ and ```pip install -r requirements.txt``` to install necessary packages.
-- Download the pytorch model from our Google Drive [urgency_en.pt](https://drive.google.com/file/d/1bos4ojDtUtZ6LZyIg7mpWplfmZ49emfS/view?usp=sharing) to the current folder.
+- Download the pytorch model from our Google Drive [urgency_en.pt](https://drive.google.com/file/d/1a2xFP8RVF0QE4qk7sW5rOww5EWM9FkL-/view?usp=sharing) to the current folder.
 - Input sentences or tweets should be in text format as shown in ```sample.txt```
 
 ### How to run
