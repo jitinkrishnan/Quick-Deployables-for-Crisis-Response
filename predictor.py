@@ -68,8 +68,9 @@ def predict(test_file, hidden_layers, lang, SCRATCH_FNAME):
     f.close()
 
     if lang == 'en':
-        tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
-        bert = BertModel.from_pretrained("bert-base-uncased")
+        model_class, tokenizer_class, pretrained_weights = (transformers.DistilBertModel, transformers.DistilBertTokenizer, 'distilbert-base-uncased')
+        tokenizer = tokenizer_class.from_pretrained(pretrained_weights)
+        bert = model_class.from_pretrained(pretrained_weights)
     else:
         tokenizer = AutoTokenizer.from_pretrained("bert-base-multilingual-uncased")
         bert = AutoModelForMaskedLM.from_pretrained("bert-base-multilingual-uncased")
@@ -110,10 +111,10 @@ def predict(test_file, hidden_layers, lang, SCRATCH_FNAME):
 
 if __name__ == '__main__':
     # execute only if run as the entry point into the program
-    test_file = sys.argv[1]
+    test_file = sys.argv[1] #'sample.txt'
     hidden_layers = int(sys.argv[2]) #768
     lang = sys.argv[3] #'en'
-    SCRATCH_FNAME = sys.argv[4] #"urgency.pt"
+    SCRATCH_FNAME = sys.argv[4] #'urgency_en.pt'
 
     total_preds = predict(test_file, hidden_layers, lang, SCRATCH_FNAME)
 
