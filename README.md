@@ -61,7 +61,7 @@ We train using tweets from a set of crisis events and test using a **fully unsee
 | **Average**		          | **0.77** | **0.73** |
 
 #### Multilingual
-Use [urgency_ml.pt]() instead.
+Use [urgency_ml.pt](https://drive.google.com/file/d/1Ljd5mnU2jVeHtatrC2V3MLdLRQrqt242/view?usp=sharing) instead.
 ```python predictor.py 'sample.txt' 105879 'ml' 'urgency_ml.pt'```
 
 ### Contact information
