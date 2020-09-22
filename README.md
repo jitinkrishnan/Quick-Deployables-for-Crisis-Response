@@ -38,27 +38,27 @@ We train using tweets from a set of crisis events and test using a **fully unsee
 
 | Target Crisis  | Accuracy  | Recall |
  :-: |  :-: |  :-:
-| Maria                   | 0.87 | 0.83 |
-| Harvey                  | 0.75 | 0.72 |
-| Florence                | 0.92 | 0.89 |
-| Irma                    | 0.67 | 0.59 |
-| Australia Bushfire      | 0.81 | 0.74 |
-| Philipinnes Floods      | 0.71 | 0.68 |
-| Alberta Floods          | 0.77 | 0.68 |
-| Nepal Earthquake        | 0.78 | 0.80 |
-| Typhoon Hagupit         | 0.82 | 0.82 |
-| Chile Earthquake        | 0.74 | 0.64 |
-| Joplin Tornado          | 0.74 | 0.71 |
-| Typhoon Yolanda         | 0.87 | 0.86 |
-| Queensland Floods       | 0.76 | 0.73 |
-| Manila Floods           | 0.65 | 0.57 |
-| Paris Attacks           | 0.87 | 0.84 |
-| Italy Earthquakes       | 0.73 | 0.70 |
-| Guatemala Earthquake    | 0.67 | 0.64 |
-| Boston Bombings         | 0.82 | 0.82 |
-| Florida School Shooting | 0.75 | 0.66 |
-| Covid                   | 0.77 | 0.73 |
-| **Average**		          | **0.77** | **0.73** |
+| Maria                   | 0.89 | 0.88 |
+| Harvey                  | 0.82 | 0.83 |
+| Florence                | 0.97 | 0.97 |
+| Irma                    | 0.83 | 0.82 |
+| Australia Bushfire      | 0.89 | 0.87 |
+| Philipinnes Floods      | 0.75 | 0.74 |
+| Alberta Floods          | 0.86 | 0.81 |
+| Nepal Earthquake        | 0.76 | 0.81 |
+| Typhoon Hagupit         | 0.81 | 0.83 |
+| Chile Earthquake        | 0.86 | 0.81 |
+| Joplin Tornado          | 0.77 | 0.77 |
+| Typhoon Yolanda         | 0.86 | 0.88 |
+| Queensland Floods       | 0.78 | 0.79 |
+| Manila Floods           | 0.80 | 0.76 |
+| Paris Attacks           | 0.88 | 0.86 |
+| Italy Earthquakes       | 0.77 | 0.81 |
+| Guatemala Earthquake    | 0.76 | 0.74 |
+| Boston Bombings         | 0.82 | 0.86 |
+| Florida School Shooting | 0.83 | 0.78 |
+| Covid                   | 0.81 | 0.82 |
+| **Average**		          | **0.83** | **0.82** |
 
 #### Multilingual
 Use [urgency_ml.pt](https://drive.google.com/file/d/1Ljd5mnU2jVeHtatrC2V3MLdLRQrqt242/view?usp=sharing) instead.
