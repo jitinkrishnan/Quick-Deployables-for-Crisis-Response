@@ -1,4 +1,4 @@
-# Quick Deployables 4 Crisis Responce
+# Quick Deployables for Crisis Responce
 Presenting quick deployable models (that are trained using tweets collected from 20 different crisis events labeled for priority/urgency) to filter critical messages during a crisis response.
 
 ## Priority Classifier
