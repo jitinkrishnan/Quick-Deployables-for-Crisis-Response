@@ -27,7 +27,7 @@ Sample Output in results.txt:
 If you need to call from another code to return predictions as a numpy array
 ```
 from offer_predictor import predict
-labels, scores = predict('offer_samples.txt' 'offer.pt')
+labels, scores = predict(data, 'offer.pt') # data is a list of senteences/tweets
 ```
 
 #### Results on Crisis Data
