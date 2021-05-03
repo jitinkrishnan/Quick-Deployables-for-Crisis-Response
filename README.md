@@ -27,11 +27,11 @@ Sample Output in results.txt:
 If you need to call from another code to return predictions and confidence scores as arrays/lists:
 ```
 from offer_predictor import predict
-labels, scores = predict(data, 'offer.pt') # data is a list of senteences/tweets
+labels, scores = predict(data, 'offer.pt') # data is a list of sentences/tweets
 ```
 
 #### Results on Crisis Data
-Our dataset consists of tweets collected from 4 crisis events: Hurricane Harvey, Maria, Irma, and Florence. The binary label we train on is ```help_offer``` representing tweets that offer help. We train using tweets from a set of crisis events and test using a **fully unseen** crisis. For example, when the target crisis is ```Maria```, we train using tweets from rest of all crises and test on tweets from ```Maria```. We use Macro F1 because the dataset is imbalanced and the number of tweets that ```offers help``` is much lower than the other.
+Our dataset consists of tweets collected from 4 crisis events: Hurricane Harvey, Maria, Irma, and Florence. The binary label we train on is ```help_offer``` representing tweets that offer help. We train using tweets from a set of crisis events and test using an **unseen** crisis. For example, when the target crisis is ```Maria```, we train using tweets from rest of all crises and test on tweets from ```Maria```. We use Macro F1 because the dataset is imbalanced and the number of tweets that ```offers help``` is much lower than the other.
 
 | Target Crisis  | Macro F1  |
  :-: |  :-:
