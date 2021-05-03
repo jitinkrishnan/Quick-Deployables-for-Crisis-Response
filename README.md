@@ -2,7 +2,7 @@
 
 ## Offer Classifier
 
-An XLMR-based model that predicts binary labels ```0``` or ```1``` (```1``` = someone offering help; ```0``` = other) for a given set of input sentences. We use ```xlm-roberts-base model``` from HuggingFace.
+An XLMR-based model that predicts binary labels ```0``` or ```1``` (```1``` = someone offering help; ```0``` = other) for a given set of input sentences. We use ```xlm-robertaa-base model``` from HuggingFace.
 
 ```Input:``` A text file, model (pt file)
 
@@ -12,10 +12,10 @@ An XLMR-based model that predicts binary labels ```0``` or ```1``` (```1``` = so
 ### Requirements
 - Python3.6+ and ```pip install -r requirements.txt``` to install necessary packages.
 - Download the pytorch model from our Google Drive [offer.pt](https://drive.google.com/file/d/1a2xFP8RVF0QE4qk7sW5rOww5EWM9FkL-/view?usp=sharing) to the current folder.
-- Input sentences or tweets should be in text format as shown in ```sample.txt```
+- Input sentences or tweets should be in text format as shown in ```offer_sample.txt```
 
 ### How to run
-```python offer_predictor.py 'sample.txt' 'offer.pt' 'results.txt'```
+```python offer_predictor.py 'offer_sample.txt' 'offer.pt' 'results.txt'```
 
 Sample Output: ```([0,1], [])```
 
@@ -27,15 +27,15 @@ labels, scores = predict('sample.txt' 'offer.pt')
 ```
 
 #### Results on Crisis Data
-Our dataset consists of tweets collected from 4 crisis events: Hurricane Harvey, Maria, Irma, and Florence. The binary label we train on is ```help_offeer``` representing if a tweet that offers help. We train using tweets from a set of crisis events and test using a **fully unseen** crisis. For example, when the target crisis is ```Maria```, we train using tweets from rest of all crises and test on tweets from ```Maria```. Wee use Macro F1 because the dataset is imbalanced and the number of tweets that ```offer help``` is much lower than the other.
+Our dataset consists of tweets collected from 4 crisis events: Hurricane Harvey, Maria, Irma, and Florence. The binary label we train on is ```help_offer``` representing tweets that offer help. We train using tweets from a set of crisis events and test using a **fully unseen** crisis. For example, when the target crisis is ```Maria```, we train using tweets from rest of all crises and test on tweets from ```Maria```. We use Macro F1 because the dataset is imbalanced and the number of tweets that ```offers help``` is much lower than the other.
 
 | Target Crisis  | Macro F1  |
- :-: |  :-: |  :-:
+ :-: |  :-:
 | Maria                   | 0.86 |
 | Harvey                  | 0.90 |
 | Florence                | 0.91 |
 | Irma                    | 0.91 |
-| **Average**		          | **0.83** |
+| **Average**		          | **0.895** |
 
 
 ## Urgency Classifier
