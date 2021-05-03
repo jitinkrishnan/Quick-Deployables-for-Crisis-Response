@@ -1,7 +1,46 @@
 # Quick Deployables for Crisis Responce
+
+## Offer Classifier
+
+An XLMR-based model that predicts binary labels ```0``` or ```1``` (```1``` = someone offering help; ```0``` = other) for a given set of input sentences. We use ```xlm-roberts-base model``` from HuggingFace.
+
+```Input:``` A text file, model (pt file)
+
+```Output:``` Predictions (as a list of ```0```s and ```1```s), confidence scores
+
+
+### Requirements
+- Python3.6+ and ```pip install -r requirements.txt``` to install necessary packages.
+- Download the pytorch model from our Google Drive [offer.pt](https://drive.google.com/file/d/1a2xFP8RVF0QE4qk7sW5rOww5EWM9FkL-/view?usp=sharing) to the current folder.
+- Input sentences or tweets should be in text format as shown in ```sample.txt```
+
+### How to run
+```python offer_predictor.py 'sample.txt' 'offer.pt' 'results.txt'```
+
+Sample Output: ```([0,1], [])```
+
+#### Calling from another code
+If you need to call from another code to return predictions as a numpy array
+```
+from offer_predictor import predict
+labels, scores = predict('sample.txt' 'offer.pt')
+```
+
+#### Results on Crisis Data
+Our dataset consists of tweets collected from 4 crisis events: Hurricane Harvey, Maria, Irma, and Florence. The binary label we train on is ```help_offeer``` representing if a tweet that offers help. We train using tweets from a set of crisis events and test using a **fully unseen** crisis. For example, when the target crisis is ```Maria```, we train using tweets from rest of all crises and test on tweets from ```Maria```. Wee use Macro F1 because the dataset is imbalanced and the number of tweets that ```offer help``` is much lower than the other.
+
+| Target Crisis  | Macro F1  |
+ :-: |  :-: |  :-:
+| Maria                   | 0.86 |
+| Harvey                  | 0.90 |
+| Florence                | 0.91 |
+| Irma                    | 0.91 |
+| **Average**		          | **0.83** |
+
+
+## Urgency Classifier
 Presenting quick deployable models (that are trained using tweets collected from 20 different crisis events labeled for priority/urgency) to filter critical messages during a crisis response.
 
-## Priority Classifier
 A bert-based model that predicts binary labels ```0``` or ```1``` (```1``` = high priority/urgent; ```0``` = rest) for a given set of input sentences. 
 
 ```Input:``` A text file
@@ -16,7 +55,7 @@ To be specific, we use ```DistilBert``` for English and ```bert-base-multilingua
 - Input sentences or tweets should be in text format as shown in ```sample.txt```
 
 ### How to run
-```python predictor.py 'sample.txt' 768 'en' 'urgency_en.pt'```
+```python urgency_predictor.py 'sample.txt' 768 'en' 'urgency_en.pt'```
 
 Sample Output: ```[0,1]```
 
@@ -29,7 +68,7 @@ We need rescue at the train station.
 #### Calling from another code
 If you need to call from another code to return predictions as a numpy array
 ```
-from predictor import predict
+from urgency_predictor import predict
 x = predict('sample.txt' 768 'en' 'urgency_en.pt')
 ```
 
