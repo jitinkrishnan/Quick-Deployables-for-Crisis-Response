@@ -15,7 +15,7 @@ An XLMR-based model that predicts binary labels ```0``` or ```1``` (```1``` = so
 - Input sentences or tweets should be in text format as shown in ```offer_sample.txt```
 
 ### How to run
-```python offer_predictor.py 'offer_sample.txt' 'offer.pt' 'results.txt' 1```
+```python offer_predictor.py 'offer_samples.txt' 'offer.pt' 'results.txt' 1```
 
 Sample Output in results.txt: 
 ```
@@ -27,7 +27,7 @@ Sample Output in results.txt:
 If you need to call from another code to return predictions as a numpy array
 ```
 from offer_predictor import predict
-labels, scores = predict('sample.txt' 'offer.pt')
+labels, scores = predict('offer_samples.txt' 'offer.pt')
 ```
 
 #### Results on Crisis Data
