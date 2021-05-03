@@ -2,7 +2,7 @@
 
 ## Offer Classifier
 
-An XLMR-based model that predicts binary labels ```0``` or ```1``` (```1``` = someone offering help; ```0``` = other) for a given set of input sentences. We use ```xlm-robertaa-base model``` from HuggingFace.
+An XLMR-based model that predicts binary labels ```0``` or ```1``` (```1``` = someone offering help; ```0``` = other) for a given set of input sentences. We use ```xlm-robertaa-base``` model from HuggingFace.
 
 ```Input:``` A text file, Pytorch Model (pt file)
 
