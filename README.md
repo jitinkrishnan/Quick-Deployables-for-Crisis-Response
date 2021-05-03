@@ -12,7 +12,7 @@ An XLMR-based model that predicts binary labels ```0``` or ```1``` (```1``` = so
 ### Requirements
 - Python3.6+ and ```pip install -r requirements.txt``` to install necessary packages.
 - Download the pytorch model from our Google Drive [offer.pt](https://drive.google.com/file/d/1v9CHyjbqkFUbgXO9Uwb2v4PCbwz4ZcV3/view?usp=sharing) to the current folder.
-- Input sentences or tweets should be in text format as shown in ```offer_sample.txt```
+- Input sentences or tweets should be in text format as shown in ```offer_samples.txt```
 
 ### How to run
 ```python offer_predictor.py 'offer_samples.txt' 'offer.pt' 'results.txt'```
