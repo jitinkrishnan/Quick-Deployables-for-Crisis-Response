@@ -4,7 +4,7 @@
 
 An XLMR-based model that predicts binary labels ```0``` or ```1``` (```1``` = someone offering help; ```0``` = other) for a given set of input sentences. We use ```xlm-robertaa-base model``` from HuggingFace.
 
-```Input:``` A text file, Pytorch Model (pt file), cuda_status
+```Input:``` A text file, Pytorch Model (pt file)
 
 ```Output:``` Predictions (as a list of ```0```s and ```1```s), Confidence scores
 
@@ -15,7 +15,7 @@ An XLMR-based model that predicts binary labels ```0``` or ```1``` (```1``` = so
 - Input sentences or tweets should be in text format as shown in ```offer_sample.txt```
 
 ### How to run
-```python offer_predictor.py 'offer_samples.txt' 'offer.pt' 'results.txt' 1```
+```python offer_predictor.py 'offer_samples.txt' 'offer.pt' 'results.txt'```
 
 Sample Output in results.txt: 
 ```
