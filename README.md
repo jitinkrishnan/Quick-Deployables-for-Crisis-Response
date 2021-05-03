@@ -4,9 +4,9 @@
 
 An XLMR-based model that predicts binary labels ```0``` or ```1``` (```1``` = someone offering help; ```0``` = other) for a given set of input sentences. We use ```xlm-robertaa-base model``` from HuggingFace.
 
-```Input:``` A text file, model (pt file)
+```Input:``` A text file, Pytorch Model (pt file)
 
-```Output:``` Predictions (as a list of ```0```s and ```1```s), confidence scores
+```Output:``` Predictions (as a list of ```0```s and ```1```s), Confidence scores
 
 
 ### Requirements
