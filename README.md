@@ -1,6 +1,6 @@
 # Quick Deployables for Crisis Responce
 
-## Offer Classifier
+## ------------------Offer Classifier------------------
 
 An XLMR-based model that predicts binary labels ```0``` or ```1``` (```1``` = someone offering help; ```0``` = other) for a given set of input sentences. We use ```xlm-robertaa-base``` model from HuggingFace.
 
@@ -42,7 +42,7 @@ Our dataset consists of tweets collected from 4 crisis events: Hurricane Harvey,
 | **Average**		          | **0.895** |
 
 
-## Urgency Classifier
+## ------------------Urgency Classifier------------------
 Presenting quick deployable models (that are trained using tweets collected from 20 different crisis events labeled for priority/urgency) to filter critical messages during a crisis response.
 
 A bert-based model that predicts binary labels ```0``` or ```1``` (```1``` = high priority/urgent; ```0``` = rest) for a given set of input sentences. 
