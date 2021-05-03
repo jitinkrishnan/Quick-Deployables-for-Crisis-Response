@@ -24,7 +24,7 @@ Sample Output in results.txt:
 ```
 
 #### Calling from another code
-If you need to call from another code to return predictions as a numpy array
+If you need to call from another code to return predictions and confidence scores as arrays/lists:
 ```
 from offer_predictor import predict
 labels, scores = predict(data, 'offer.pt') # data is a list of senteences/tweets
