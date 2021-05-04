@@ -17,7 +17,7 @@ An XLMR-based model that predicts binary labels ```0``` or ```1``` (```1``` = so
 ### How to run
 ```python offer_predictor.py 'offer_samples.txt' 'offer.pt' 'results.txt'```
 
-Sample Output in results.txt: 
+Sample Output in ```results.txt```: 
 ```
 0, 0.9995
 1, 0.9951
