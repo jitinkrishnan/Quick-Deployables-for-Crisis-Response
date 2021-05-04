@@ -1,4 +1,4 @@
-# Quick Deployables for Crisis Responce
+# Quick Deployables for Crisis Response
 
 ## ------------------Offer Classifier------------------
 
